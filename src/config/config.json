@@ -1,0 +1,116 @@
+{
+    "projects": [
+        {
+            "title": "NotifyMe",
+            "description": "A Discord Bot that allows receiving YouTube, Twitch and Kick.com notifications inside of Discord.",
+            "website": "https://notifymebot.com",
+            "github": null,
+            "img": "https://i.imgur.com/CsnYKNc.png",
+            "tags": [
+                "React.js",
+                "SCSS",
+                "JavaScript",
+                "TypeScript",
+                "Node.js",
+                "Express",
+                "Puppeteer",
+                "Socket.io",
+                "Firestore",
+                "Redis",
+                "Supabase",
+                "Oceanic.js",
+                "Discord.js",
+                "YouTube API",
+                "Twitch API",
+                "Kick.com API"
+            ],
+            "publicProject": true,
+            "openSource": false,
+            "status": true
+        },
+        {
+            "title": "PRO",
+            "description": "An advanced Project Management web app built for an undisclosed client.",
+            "website": null,
+            "github": null,
+            "img": "https://i.imgur.com/OoxhMhw.png",
+            "tags": [
+                "React.js",
+                "SCSS",
+                "JavaScript",
+                "Node.js",
+                "Express",
+                "Firestore",
+                "Redis",
+                "Supabase"
+            ],
+            "publicProject": false,
+            "openSource": false,
+            "status": true
+        },
+        {
+            "title": "dacosta.codes",
+            "description": "My Web Development & Motion Design Portfolio.\nThe website you are on right now :D",
+            "website": "https://dacosta.codes/",
+            "github": null,
+            "img": "https://i.imgur.com/nyvbjEZ.png",
+            "tags": [
+                "React.js",
+                "SCSS"
+            ],
+            "publicProject": true,
+            "openSource": false,
+            "status": true
+        },
+        {
+            "title": "Deezcord",
+            "description": "A real-time global chat app, inspired on Discord, Whatsapp and Instagram.",
+            "website": "https://deezcord.dacosta.codes/",
+            "github": "https://github.com/itsgox/Deezcord",
+            "img": "https://i.imgur.com/cI3FSaa.png",
+            "tags": [
+                "React.js",
+                "SCSS",
+                "JavaScript",
+                "Node.js",
+                "Socket.io",
+                "Supabase"
+            ],
+            "publicProject": true,
+            "openSource": true,
+            "status": true
+        },
+        {
+            "title": "spotify-to-ytmusic",
+            "description": "A simple NPM package to convert Spotify URLs to YouTube Music URLs.",
+            "website": "https://npmjs.com/spotify-to-ytmusic",
+            "github": "https://github.com/itsgox/spotify-to-ytmusic",
+            "img": "https://i.imgur.com/KauQmy2.png",
+            "tags": [
+                "JavaScript",
+                "Node.js",
+                "YouTube Music API",
+                "Spotify API"
+            ],
+            "publicProject": true,
+            "openSource": true,
+            "status": true
+        },
+        {
+            "title": "simple-firestore",
+            "description": "An NPM package to interact with the Firestore API, with optional caching using Redis.",
+            "website": "https://npmjs.com/simple-firestore",
+            "github": "https://github.com/itsgox/simple-firestore",
+            "img": "https://i.imgur.com/XJ6h3sJ.png",
+            "tags": [
+                "JavaScript",
+                "Node.js",
+                "Firestore",
+                "Redis"
+            ],
+            "publicProject": true,
+            "openSource": true,
+            "status": true
+        }
+    ]
+}

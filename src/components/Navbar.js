@@ -1,44 +1,28 @@
 import React, { memo } from 'react';
-import { BsDiscord, BsGithub } from 'react-icons/bs';
-import { AiFillInstagram } from 'react-icons/ai';
-import { FaTwitter } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = memo(({ page }) => {
 
+	const navigate = useNavigate();
+
 	const pages = [
-		{ id: 'projects', button: false },
-		{ id: 'about', button: false },
-		{ id: 'contact', url: 'mailto:goxinthebox@gmail.com', button: true }
+		{ id: 'home' },
+		{ id: 'projects' },
+		{ id: 'about' },
+		{ id: 'contact', url: 'mailto:goxdacosta@gmail.com' }
 	];
 
-	function openLink(url) {
-		window.open(`https://${url}`, '_blank');
-	}
+	const date = new Date();
+	const currentYear = date.getFullYear();
 
 	return (
-		<>
-			<div className='socials-container'>
-				<div className='socials'>
-					<div className='icons'>
-						<BsGithub className='icon' onClick={() => openLink('github.com/itsgox')} />
-						<BsDiscord className='icon' onClick={() => openLink('discord.gg/MCP84Af8Cm')} />
-						<AiFillInstagram className='icon' onClick={() => openLink('instagram.com/goxdacosta')} />
-						<FaTwitter className='icon' onClick={() => openLink('twitter.com/goxdacosta')} />
-					</div>
-					<hr className='line' />
-				</div>
+		<div className='navbar'>
+			<div className='section'>
+				{pages.map((p, i) => { return(
+					<span key={i} onClick={() => p.url ? window.open(p.url, '_blank') : navigate(`/${p.id}`)} className={`item${p.id === page ? ' selected' : ''}`}>{p.id.charAt(0).toUpperCase()}{p.id.slice(1)}</span>
+				);})}
 			</div>
-			<div className='navbar'>
-				<div className='section logo'>
-					<a href={page === 'home' ? null : '/'} className='main'>dacosta.</a>
-				</div>
-				<div className='section'>
-					{pages.map((p, i) => { return(
-						<a key={i} href={p.url ? p.url : `/${p.id}`} className={`item${p.id === page ? ' selected' : ''}${p.button ? ' btn' : ''}`}>{p.id}.</a>
-					);})}
-				</div>
-			</div>
-		</>
+		</div>
 	);
 });
 

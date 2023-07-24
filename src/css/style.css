@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Showing";
-  src: url("../fonts/Showing.otf");
+  font-family: "Catchye";
+  src: url("../fonts/Catchye.otf");
 }
 @font-face {
   font-family: "MADE_TOMMY_Light";
@@ -19,16 +19,26 @@
   src: url("../fonts/MADE_TOMMY_Bold.otf");
 }
 :root {
-  --bg: rgb(253, 241, 225);
-  --hover: rgba(239, 191, 128, 0.137);
+  --bg: rgb(251, 233, 210);
   --shadow: rgba(239, 191, 128, 0.35);
+  --shadow2: rgba(239, 191, 128, 0.215);
   --dark: rgb(30, 13, 2);
+  --hover: rgb(175, 135, 83);
+  --box1: rgba(239, 191, 128, 0.257);
+  --box2: rgba(239, 191, 128, 0.108);
+  --box3: rgba(239, 191, 128, 0.08);
+  --btn-glow: rgb(101, 79, 48);
+  --btn-glow2: rgb(70, 55, 33);
+  --btn-glow3: rgba(239, 191, 128, 0.092);
+  --card: rgba(239, 191, 128, 0.247);
 }
 
 body {
   margin: 0;
   padding: 0;
   background: var(--bg);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 a {
@@ -36,138 +46,306 @@ a {
   color: var(--dark);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .navbar {
   color: var(--dark);
   font-family: MADE_TOMMY_Bold;
-  padding: 20px 170px;
+  padding: 40px 12%;
   font-size: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  z-index: 10000000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .navbar .section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  z-index: 100;
+  padding: 0 50px;
 }
 .navbar .section .item {
   cursor: pointer;
-  padding: 8px 20px;
+  font-family: MADE_TOMMY_Regular;
+  transition: 0.5s;
   border-radius: 7px;
-  transition: 0.2s;
+  font-size: 20px;
+  padding: 15px 31px;
 }
 .navbar .section .item:hover {
-  background: var(--shadow);
+  background: var(--box2);
 }
 .navbar .section .selected {
-  background: var(--shadow);
+  background: var(--box1);
+  box-shadow: 0px 7px 15px var(--box3);
 }
-.navbar .section .btn {
-  background: var(--dark);
-  color: var(--bg);
-  box-shadow: 0 0px 0 var(--shadow);
-  font-family: MADE_TOMMY_Bold;
-}
-.navbar .section .btn:hover {
-  background: var(--dark);
-  box-shadow: 8px 8px 0 var(--shadow);
-}
-.navbar .logo {
-  flex-direction: column;
-  gap: 0;
-  align-items: start;
-}
-.navbar .logo .main {
-  font-family: Showing;
-  font-size: 55px;
-  cursor: pointer;
-}
-
-.socials-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.socials {
-  padding: 50px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.socials .line {
-  margin: 0;
-  border: none;
-  outline: none;
-  height: inherit;
-  width: 2px;
-  background: var(--dark);
-}
-.socials .icons {
-  background: var(--bg);
-  padding: 20px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  bottom: 80px;
-  flex-direction: column;
-  gap: 22px;
-  z-index: 100000;
-}
-.socials .icons .icon {
-  cursor: pointer;
+.navbar .section .selected:hover {
+  background: var(--box1);
 }
 
 .hero {
   position: absolute;
-  top: 82px;
+  top: 85px;
   bottom: 0;
   right: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 170px;
+  padding: 0 10%;
   gap: 80px;
+  z-index: -1;
+  flex-wrap: wrap;
 }
 .hero .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
+  align-items: center;
+  gap: 38px;
+}
+.hero .content .role {
+  font-family: MADE_TOMMY_Light;
+  font-size: 30px;
 }
 .hero .content .title {
-  font-family: MADE_TOMMY_Bold;
-  font-size: 90px;
-  padding: 0px;
-  background: var(--dark);
-  color: var(--bg);
-  border-radius: 7px;
-  cursor: pointer;
-  transition: 0.2s;
-  box-shadow: 0px 0px 0 var(--shadow);
-  padding: 0px 25px;
-}
-.hero .content .title:hover {
-  background: var(--dark);
-  box-shadow: 8px 8px 0 var(--shadow);
-}
-.hero .content .subtitle {
-  font-family: MADE_TOMMY_Bold;
-  font-size: 55px;
+  font-family: Catchye;
+  font-size: 130px;
   color: var(--dark);
   white-space: pre-wrap;
+  line-height: 0.95em;
+  text-align: center;
+  text-shadow: 0px 7px 15px var(--shadow);
 }
-.hero .content .small {
+.hero .content .colored {
+  background: -webkit-linear-gradient(25deg, var(--dark) 0%, var(--dark) 35%, var(--btn-glow) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .content .subtitle {
+  font-family: MADE_TOMMY_Regular;
+  font-size: 40px;
+  color: var(--dark);
+}
+.hero .content .buttons {
+  display: flex;
+  gap: 15px;
+}
+.hero .content .buttons .btn {
+  font-size: 20px;
+  padding: 17px 33px;
+  border-radius: 10px;
+  font-family: MADE_TOMMY_Regular;
+  cursor: pointer;
+  box-shadow: 0px 7px 15px var(--shadow);
+  transition: 1s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.hero .content .buttons .btn:hover {
+  transform: translateY(-0.1em);
+}
+.hero .content .buttons .primary {
+  background: linear-gradient(-25deg, var(--dark) 0%, var(--dark) 35%, var(--btn-glow2) 100%);
+  color: var(--bg);
+}
+.hero .content .buttons .secondary {
+  background: var(--box1);
+  box-shadow: 0px 7px 15px var(--box3);
+}
+.hero .content .icons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 100000;
+}
+.hero .content .icons .icon {
+  color: var(--dark);
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px var(--box3);
+}
+.hero .content .icons .icon:hover {
+  background: var(--shadow);
+  transform: scale(1.04);
+  box-shadow: 0px 7px 15px var(--box3);
+}
+
+.projects {
+  margin-top: 80px;
+  padding-bottom: 140px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  background: var(--card);
+  box-shadow: 0px 7px 15px var(--btn-glow3);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 18px;
+  gap: 15px;
+  transition: 1s;
+  width: 376px;
+  max-width: 376px;
+  z-index: 0;
+  border: 2px solid var(--shadow);
+}
+.project:hover {
+  transform: scale(1.01);
+}
+.project .img {
+  aspect-ratio: 16/9;
+  border-radius: 7px;
+  box-shadow: 0px 7px 15px var(--shadow2);
+  cursor: pointer;
+  transition: 1s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project .img:hover {
+  transform: scale(1.01);
+}
+.project .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  z-index: -1;
+}
+.project .img .shadow-solid {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.project .img .show-shadow-solid {
+  opacity: 35%;
+}
+.project .img .tags {
+  z-index: 1000;
+  transition: 0.5s;
+  opacity: 0;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  transform: scale(0.98);
+}
+.project .img .tags .tag {
+  background: var(--bg);
+  color: var(--dark);
+  padding: 5px 10px;
+  font-family: MADE_TOMMY_Medium;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: 0px 7px 15px var(--shadow);
+}
+.project .img .show-tags {
+  opacity: 100%;
+  transform: scale(1);
+}
+.project .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.project .texts .title-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.project .texts .title-container .title {
+  font-family: MADE_TOMMY_Medium;
+  font-size: 22px;
+}
+.project .texts .title-container .icon {
+  font-size: 20px;
+}
+.project .texts .description {
   font-family: MADE_TOMMY_Light;
-  font-size: 38px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+.project .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-satrt;
+  gap: 10px;
+}
+.project .buttons .btn {
+  padding: 15px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 1s;
+  font-family: MADE_TOMMY_Regular;
+}
+.project .buttons .btn:hover {
+  transform: translateY(-0.1em);
+}
+.project .buttons .primary {
+  box-shadow: 0px 7px 15px var(--shadow2);
+  background: linear-gradient(-25deg, var(--dark) 0%, var(--dark) 35%, var(--btn-glow2) 100%);
+  color: var(--bg);
+}
+.project .buttons .secondary {
+  background: var(--shadow);
+  box-shadow: 0px 7px 15px var(--box3);
+}
+.project .buttons .disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+.project .buttons .disabled:hover {
+  transform: translateY(0);
+}
+
+.mobile-warning {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Catchye;
+  font-size: 50px;
+  color: var(--dark);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
