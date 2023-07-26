@@ -1,8 +1,12 @@
 import React, { memo, useState } from 'react';
-import { MdPublic, MdPublicOff } from 'react-icons/md';
+import { MdPublic, MdPublicOff, MdVerified } from 'react-icons/md';
 import { RiOpenSourceFill } from 'react-icons/ri';
+import { BsFillPeopleFill } from 'react-icons/bs';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/themes/material.css';
 
-const Project = memo(({ key, img, title, description, website, github, publicProject, openSource, tags }) => {
+const Project = memo(({ key, img, title, description, website, github, publicProject, openSource, tags, verified, verifiedText, people, peopleText }) => {
 
 	const [tagsState, setTagsState] = useState(false);
 
@@ -18,11 +22,13 @@ const Project = memo(({ key, img, title, description, website, github, publicPro
 			<div className='texts'>
 				<div className='title-container'>
 					<span className='title'>{title}</span>
-					{publicProject
+					<Tippy offset={[0,12]} theme='material' placement='top' content={`${publicProject ? 'Public' : 'Private'} Project`}><span>{publicProject
 						? <MdPublic className='icon' />
 						: <MdPublicOff className='icon' />
-					}
-					{openSource && <RiOpenSourceFill className='icon' />}
+					}</span></Tippy>
+					{verified && <Tippy offset={[0,12]} theme='material' placement='top' content={verifiedText}><span><MdVerified className='icon' /></span></Tippy>}
+					{people && <Tippy offset={[0,12]} theme='material' placement='top' content={peopleText}><span><BsFillPeopleFill className='icon' /></span></Tippy>}
+					{openSource && <Tippy offset={[0,12]} theme='material' placement='top' content='Open Source'><span><RiOpenSourceFill className='icon' /></span></Tippy>}
 				</div>
 				<span className='description'>{description}</span>
 			</div>

@@ -36,9 +36,9 @@ const Home = memo(() => {
 					</div>
 					<div className='icons'>
 						<div className='icon' onClick={() => openLink('github.com/itsgox')}><BsGithub /></div>
-						<div className='icon' onClick={() => openLink('github.com/itsgox')}><BsDiscord /></div>
-						<div className='icon' onClick={() => openLink('github.com/itsgox')}><AiFillInstagram /></div>
-						<div className='icon' onClick={() => openLink('github.com/itsgox')}><FaTwitter /></div>
+						<div className='icon' onClick={() => openLink('discord.gg/MCP84Af8Cm')}><BsDiscord /></div>
+						<div className='icon' onClick={() => openLink('instagram.com/goxdacosta')}><AiFillInstagram /></div>
+						<div className='icon' onClick={() => openLink('twitter.com/goxdacosta')}><FaTwitter /></div>
 					</div>
 				</div>
 			</div>

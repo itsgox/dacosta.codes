@@ -12,7 +12,7 @@ const Projects = memo(() => {
 			<div className='hero'>
 				<div className='projects'>
 					{config.projects.filter(pr => pr.status).map((pr, i) => { return(
-						<Project key={i} publicProject={pr.publicProject} openSource={pr.openSource} img={pr.img} title={pr.title} description={pr.description} website={pr.website} github={pr.github} tags={pr.tags} />
+						<Project key={i} publicProject={pr.publicProject} openSource={pr.openSource} img={pr.img} title={pr.title} description={pr.description} website={pr.website} github={pr.github} tags={pr.tags} verified={pr.verified} verifiedText={pr.verifiedText} people={pr.people} peopleText={pr.peopleText} />
 					);})}
 				</div>
 			</div>
