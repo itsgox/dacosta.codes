@@ -85,6 +85,53 @@
             "status": true
         },
         {
+            "title": "simple-supabase",
+            "description": "A NPM package to interact with Supabase PostgreSQL, with Redis caching! (NotifyMe usage only)",
+            "website": null,
+            "github": null,
+            "img": "https://i.imgur.com/DMBfsyU.png",
+            "tags": [
+                "JavaScript",
+                "Node.js",
+                "Supabase",
+                "Redis"
+            ],
+            "publicProject": false,
+            "openSource": false,
+            "status": true
+        },
+        {
+            "title": "simple-firestore",
+            "description": "A NPM package to interact with the Firestore API, with optional caching using Redis!",
+            "website": "https://npmjs.com/simple-firestore",
+            "github": "https://github.com/itsgox/simple-firestore",
+            "img": "https://i.imgur.com/XJ6h3sJ.png",
+            "tags": [
+                "JavaScript",
+                "Node.js",
+                "Firestore",
+                "Redis"
+            ],
+            "publicProject": true,
+            "openSource": true,
+            "status": true
+        },
+        {
+            "title": "redis-list",
+            "description": "A NPM package to easily use Redis Lists!\n(NotifyMe usage only)",
+            "website": null,
+            "github": null,
+            "img": "https://i.imgur.com/iUs1YmK.png",
+            "tags": [
+                "JavaScript",
+                "Node.js",
+                "Redis"
+            ],
+            "publicProject": false,
+            "openSource": false,
+            "status": true
+        },
+        {
             "title": "spotify-to-ytmusic",
             "description": "A simple NPM package to convert Spotify URLs to YouTube Music URLs.",
             "website": "https://npmjs.com/spotify-to-ytmusic",
@@ -95,22 +142,6 @@
                 "Node.js",
                 "YouTube Music API",
                 "Spotify API"
-            ],
-            "publicProject": true,
-            "openSource": true,
-            "status": true
-        },
-        {
-            "title": "simple-firestore",
-            "description": "An NPM package to interact with the Firestore API, with optional caching using Redis.",
-            "website": "https://npmjs.com/simple-firestore",
-            "github": "https://github.com/itsgox/simple-firestore",
-            "img": "https://i.imgur.com/XJ6h3sJ.png",
-            "tags": [
-                "JavaScript",
-                "Node.js",
-                "Firestore",
-                "Redis"
             ],
             "publicProject": true,
             "openSource": true,

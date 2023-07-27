@@ -39,7 +39,7 @@ body {
   background: var(--bg);
   -ms-overflow-style: none;
   scrollbar-width: none;
-  font-family: MADE_TOMMY_Medium;
+  font-family: MADE_TOMMY_Regular;
 }
 
 a {
