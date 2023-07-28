@@ -27,7 +27,7 @@
             "verified": true,
             "verifiedText": "Verified by Discord",
             "people": true,
-            "peopleText": "5K+ Discord Servers / 750K+ Users",
+            "peopleText": "5K+ Discord Servers / 800K+ Users",
             "publicProject": true,
             "openSource": false,
             "status": true
@@ -44,9 +44,9 @@
                 "JavaScript",
                 "Node.js",
                 "Express",
-                "Firestore",
-                "Redis",
-                "Supabase"
+                "Supabase",
+                "PostgreSQL",
+                "Redis"
             ],
             "publicProject": false,
             "openSource": false,

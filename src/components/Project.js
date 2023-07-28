@@ -34,7 +34,7 @@ const Project = memo(({ key, img, title, description, website, github, publicPro
 			</div>
 			<div className='buttons'>
 				<a href={website ? website : null} target='_blank' className={`btn primary${!website ? ' disabled' : ''}`}>Website</a>
-				{github && <a href={github ? github : null} target='_blank' className='btn secondary'>Github</a>}
+				<a href={github ? github : null} target='_blank' className={`btn secondary${!github ? ' disabled' : ''}`}>Github</a>
 			</div>
 		</div>
 	);

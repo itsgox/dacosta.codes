@@ -9,6 +9,7 @@ const Projects = memo(() => {
 		<>
 			<PageTitle title='Projects' />
 			<Navbar page='projects' />
+			<div className='page-title'>Projects</div>
 			<div className='hero'>
 				<div className='projects'>
 					{config.projects.filter(pr => pr.status).map((pr, i) => { return(

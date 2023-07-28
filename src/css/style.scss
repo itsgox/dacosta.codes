@@ -66,6 +66,10 @@ a {
 
 // Navbar
 
+.nav-menu {
+    display: none;
+}
+
 .navbar {
     color: var(--dark);
     font-family: MADE_TOMMY_Bold;
@@ -114,6 +118,10 @@ a {
 }
 
 // Home
+
+.page-title {
+    display: none;
+}
 
 .hero {
     position: absolute;
@@ -397,20 +405,127 @@ a {
     }
 }
 
-// Mobile Warning
+// ------- Mobile -------
 
-.mobile-warning {
-    padding: 30px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Catchye;
-    font-size: 50px;
-    color: var(--dark);
-    text-align: center;
+@media only screen and (max-width: 800px) {
+
+    // Navbar
+
+    .nav-menu {
+        display: inline;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .close {
+        color: var(--bg);
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        box-sizing: border-box;
+        z-index: 10000000000;
+        background: var(--dark);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: none;
+        outline: none;
+        display: none;
+
+        .section {
+            flex-direction: column;
+            gap: 40px;
+            padding: 0;
+    
+            .item {
+                color: var(--bg);
+                font-size: 25px;
+                padding: 0;
+
+                &:hover {
+                    background: none;
+                }
+            }
+
+            .selected {
+                background: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .show-nav {
+        display: flex;
+    }
+
+    // Home
+
+    .page-title {
+        color: var(--dark);
+        font-family: Catchye;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+        font-size: 50px;
+    }
+
+    .hero {
+        padding: 30px;
+        top: 50px;
+        
+        .content {
+            margin: 0;
+            padding: 0;
+
+            .role {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .title {
+                font-size: 65px;
+            }
+        }
+    }
+
+    // Projects
+
+    .projects {
+        margin-top: 80px;
+    }
+
+    .project {
+        width: 100%;
+
+        &:hover {
+            transform: scale(1);
+        }
+
+        .img {
+            &:hover {
+                transform: scale(1);
+            }
+    
+            .tags {
+                gap: 4px;
+
+                .tag {
+                    background: var(--dark);
+                    color: var(--bg);
+                    padding: 3px 7px;
+                    font-family: MADE_TOMMY_Medium;
+                    font-size: 10px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
 }

@@ -7,10 +7,6 @@ import { FaTwitter } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 
-import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
-import { SiExpress, SiPuppeteer, SiSocketdotio, SiRedis, SiFirebase, SiSupabase } from 'react-icons/si';
-import { BiLogoJavascript, BiLogoTypescript } from 'react-icons/bi';
-
 const Home = memo(() => {
 
 	const navigate = useNavigate();
