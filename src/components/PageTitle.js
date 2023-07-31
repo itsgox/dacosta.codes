@@ -1,11 +1,10 @@
 import React, { memo } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const PageTitle = memo(({ title }) => {
+const PageTitle = memo(() => {
 	return (
 		<Helmet>
-			{/*<title>DaCosta's Portfolio{title ? ` — ${title}` : ''}</title>*/}
-			<title>DaCosta — Full-Stack Developer & Motion Designer</title>
+			<title>DaCosta's Portfolio</title>
 		</Helmet>
 	);
 });

@@ -21,14 +21,14 @@ const Home = memo(() => {
 			<Navbar page='home' />
 			<div className='hero'>
 				<div className='content'>
-					<span className='role'>Full-Stack Developer & Motion Designer</span>
+					<span className='role'>React.js & Node.js Developer</span>
 					<span className='title'>I build <span className='colored'>websites</span>{'\n'}and <span className='colored'>design</span> things</span>
 					<div className='buttons'>
 						<div href='/projects' className='btn primary' onClick={() => navigate('/projects')}>
 							<span>Projects</span>
 							<FiArrowRight />
 						</div>
-						<a href='mailto:goxdacosta@gmail.com' className='btn secondary'>Contact</a>
+						<a href='mailto:goxdacosta@gmail.com' className='btn secondary'>Email Me</a>
 					</div>
 					<div className='icons'>
 						<div className='icon' onClick={() => openLink('github.com/itsgox')}><BsGithub /></div>

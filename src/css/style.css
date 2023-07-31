@@ -305,7 +305,7 @@ a {
   align-items: center;
 }
 .project .texts .title-container .icon {
-  font-size: 20px;
+  font-size: 22px;
 }
 .project .texts .description {
   font-family: MADE_TOMMY_Light;
@@ -409,6 +409,7 @@ a {
   .hero .content {
     margin: 0;
     padding: 0;
+    padding: 10px 0 80px 0;
   }
   .hero .content .role {
     font-size: 25px;
@@ -416,6 +417,10 @@ a {
   }
   .hero .content .title {
     font-size: 65px;
+  }
+  .hero .content .buttons {
+    flex-direction: column;
+    gap: 12px;
   }
   .projects {
     margin-top: 80px;
@@ -437,7 +442,7 @@ a {
     color: var(--bg);
     padding: 3px 7px;
     font-family: MADE_TOMMY_Medium;
-    font-size: 10px;
+    font-size: 11px;
     border-radius: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
