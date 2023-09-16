@@ -10,7 +10,6 @@
                 "React.js",
                 "SCSS",
                 "JavaScript",
-                "TypeScript",
                 "Node.js",
                 "Express",
                 "Socket.io",
@@ -25,7 +24,7 @@
             "verified": true,
             "verifiedText": "Verified by Discord",
             "people": true,
-            "peopleText": "6K+ Discord Servers / 850K+ Users",
+            "peopleText": "7K+ Discord Servers / 1.1M+ Users",
             "publicProject": true,
             "openSource": false,
             "status": true
@@ -37,14 +36,11 @@
             "github": null,
             "img": "https://i.imgur.com/i3eSmR6.png",
             "tags": [
-                "React.js",
-                "SCSS",
+                "Next.js",
+                "Tailwind CSS",
                 "JavaScript",
-                "Node.js",
-                "Express",
-                "Socket.io",
                 "Simple Supabase",
-                "Supabase Auth"
+                "Next Auth"
             ],
             "publicProject": false,
             "openSource": false,
