@@ -7,48 +7,33 @@
             "github": null,
             "img": "https://i.imgur.com/CsnYKNc.png",
             "tags": [
+                "JavaScript",
                 "React.js",
                 "SCSS",
-                "JavaScript",
+                "Supabase Auth",
                 "Node.js",
                 "Express",
                 "Socket.io",
                 "Simple Supabase",
-                "Supabase Auth",
+                "Redis",
                 "Oceanic.js",
                 "Discord.js",
                 "YouTube API",
+                "TikTok API",
                 "Twitch API",
                 "Kick.com API"
             ],
             "verified": true,
             "verifiedText": "Verified by Discord",
             "people": true,
-            "peopleText": "7K+ Discord Servers / 1.1M+ Users",
+            "peopleText": "8K+ Discord Servers / 1.3M+ Users",
             "publicProject": true,
             "openSource": false,
             "status": true
         },
         {
-            "title": "PRO",
-            "description": "An advanced Project Management web app built for an undisclosed client.",
-            "website": null,
-            "github": null,
-            "img": "https://i.imgur.com/i3eSmR6.png",
-            "tags": [
-                "Next.js",
-                "Tailwind CSS",
-                "JavaScript",
-                "Simple Supabase",
-                "Next Auth"
-            ],
-            "publicProject": false,
-            "openSource": false,
-            "status": true
-        },
-        {
             "title": "Simple Supabase",
-            "description": "A private NPM package built for NotifyMe/PRO, to interact with Supabase PostgreSQL.",
+            "description": "A private NPM package built for NotifyMe, to interact with Supabase PostgreSQL and Redis caching.",
             "website": null,
             "github": null,
             "img": "https://i.imgur.com/DMBfsyU.png",
@@ -64,65 +49,18 @@
         },
         {
             "title": "Kick.com API",
-            "description": "A private NPM package built for NotifyMe, to get data from Kick.com API.",
+            "description": "A private NPM package built for NotifyMe, to interact with the Kick.com API.",
             "website": null,
             "github": null,
             "img": "https://i.imgur.com/vaDthmJ.png",
             "tags": [
                 "JavaScript",
                 "Node.js",
-                "Puppeteer"
+                "Puppeteer",
+                "Pusher.js"
             ],
             "publicProject": false,
             "openSource": false,
-            "status": true
-        },
-        {
-            "title": "Deezcord",
-            "description": "A real-time global chat app, inspired on Discord, Whatsapp and Instagram.",
-            "website": "https://deezcord.dacosta.codes/",
-            "github": "https://github.com/itsgox/Deezcord",
-            "img": "https://i.imgur.com/cI3FSaa.png",
-            "tags": [
-                "React.js",
-                "SCSS",
-                "JavaScript",
-                "Node.js",
-                "Socket.io",
-                "Supabase Auth"
-            ],
-            "publicProject": true,
-            "openSource": true,
-            "status": true
-        },
-        {
-            "title": "dacosta.codes",
-            "description": "My React.js & Node.js Portfolio.\nThe website you are on right now :D",
-            "website": "https://dacosta.codes/",
-            "github": "https://github.com/itsgox/dacosta.codes",
-            "img": "https://i.imgur.com/mboGjlo.png",
-            "tags": [
-                "React.js",
-                "SCSS"
-            ],
-            "publicProject": true,
-            "openSource": true,
-            "status": true
-        },
-        {
-            "title": "simple-firestore",
-            "description": "A public NPM package, to interact with the Firestore API, with optional caching using Redis.",
-            "website": "https://npmjs.com/simple-firestore",
-            "github": "https://github.com/itsgox/simple-firestore",
-            "img": "https://i.imgur.com/XJ6h3sJ.png",
-            "tags": [
-                "JavaScript",
-                "Node.js",
-                "Firebase Firestore",
-                "Redis"
-            ],
-            "publicProject": true,
-            "openSource": true,
             "status": true
         },
         {

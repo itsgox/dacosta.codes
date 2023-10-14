@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { MdClose } from 'react-icons/md';
@@ -10,7 +10,7 @@ const Navbar = memo(({ page }) => {
 	const pages = [
 		{ name: 'Home', id: 'home' },
 		{ name: 'Projects', id: 'projects' },
-		{ name: 'About', id: 'about' },
+		//{ name: 'About', id: 'about' },
 		{ name: 'Email Me', id: 'email', url: 'mailto:goxdacosta@gmail.com' }
 	];
 
