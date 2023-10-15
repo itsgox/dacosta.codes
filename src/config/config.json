@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "NotifyMe",
-            "description": "A Discord Bot that allows receiving YouTube, Twitch and Kick.com notifications inside of Discord.",
+            "description": "A Discord Bot that allows receiving YouTube, TikTok, Twitch and Kick.com notifications inside of Discord.",
             "website": "https://notifymebot.com",
             "github": null,
             "img": "https://i.imgur.com/CsnYKNc.png",
